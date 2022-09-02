@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lorenzana Trading</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Lorenzana Trading</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="view.html">Employee Data</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Payroll
+                  </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="logo.png" class="rounded" alt="LT">
+    <br>
+
+    <form class="row g-1">
+        <div class="col-md-5">
+            <label for="inputworkstatus4" class="form-label">WORK STATUS</label>
+            <input type="workstatus" class="form-control" id="inputworkstatus4">
+        </div>
+        <div class="col-md-5">
+            <label for="inputemployeeid4" class="form-label">EMPLOYEE</label>
+            <input type="employeeid" class="form-control" id="inputemployeeid4">
+        </div>
+        <br>
+        <center>
+            <h1>GENERAL INFORMATION</h1>
+        </center>
+        <br>
+        <div class="col-md-5">
+            <label for="inputlname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputlname">
+        </div>
+        <div class="col-md-5">
+            <label for="inputfname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputfname">
+        </div>
+        <div class="col-10">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-5">
+            <label for="inputM.I" class="form-label">M.I</label>
+            <input type="text" class="form-control" id="inputM.I">
+        </div>
+        <div class="col-md-5">
+            <label for="inputBirthDate" class="form-label">BirthDate</label>
+            <input type="text" class="form-control" id="inputBirthDate">
+        </div>
+        <div class="col-md-4">
+            <label for="inputSex" class="form-label">Sex</label>
+            <select id="inputSex" class="form-select">
+         <option >...</option>
+         <option >Everyday</option>
+         <option>Weekly</option>
+         <option>Monthly</option>
+      </select>
+        </div>
+        <div class="col-md-4">
+            <label for="inputStatus" class="form-label">Status</label>
+            <select id="inputStatus" class="form-select">
+         <option >...</option>
+         <option >Single</option>
+         <option>Widow</option>
+         <option>Separated</option>
+         <option>Married</option>
+      </select>
+        </div>
+        <div class="col-md-5">
+            <label for="inputPosition" class="form-label">Position</label>
+            <input type="text" class="form-control" id="inputPosition">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputsalary" class="form-label">Rate/day</label>
+            <input type="text" class="form-control" id="inputSalary">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputhired" class="form-label">Datehired</label>
+            <input type="text" class="form-control" id="inputhired">
+        </div>
+
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-5">
+            <label for="inputemail4" class="form-label">Email Address</label>
+            <input type="workstatus" class="form-control" id="inputemail4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputsss4" class="form-label">SSS ID No.</label>
+            <input type="workstatus" class="form-control" id="inputsss4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputphilhealth4" class="form-label">PHILHEALTH ID No.</label>
+            <input type="workstatus" class="form-control" id="inputphilhealth4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputpagibig4" class="form-label">PAGIBIG No.</label>
+            <input type="workstatus" class="form-control" id="inputpagibig4">
+        </div>
+        <div class="col-md-3">
+            <label for="inputtin4" class="form-label">Tin No.</label>
+            <input type="workstatus" class="form-control" id="inputtin4">
+        </div>
+        <br>
+        <center>
+            <H1>INCASE OF EMERGENCY</H1>
+        </center>
+        <br>
+        <div class="col-md-4">
+            <label for="inputreltoemp4" class="form-label">Name</label>
+            <input type="workstatus" class="form-control" id="inputreltoemp4">
+        </div>
+        <div class="col-md-2">
+            <label for="inputsim" class="form-label">Mobile No.</label>
+            <input type="text" class="form-control" id="inputsim">
+        </div>
+        <div class="col-md-3">
+            <label for="inputadd4" class="form-label">Address</label>
+            <input type="workstatus" class="form-control" id="inputadd4">
+        </div>
+        <div class="col-10">
+            <button type="submit" class="btn btn-dark">SUBMIT</button>
+        </div>
+    </form>
+</body>
+
+</html>
